@@ -42,3 +42,12 @@
   align-self: center;
   border-radius: 10px;
 }
+
+#cards-container {
+  display: flex;
+  margin: auto;
+  max-width: 1100px;
+  overflow: hidden;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
