@@ -51,3 +51,12 @@
   flex-wrap: wrap;
   flex-direction: column;
 }
+
+#item-details-container .detail-key{
+  width: 100px;
+}
+
+#item-details-container .detail-value{
+  width: 250px;
+  color:#fff
+}
