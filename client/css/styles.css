@@ -25,6 +25,9 @@ a {
   text-decoration: none;
 }
 
+h1, h2, h3, h4, h5 {
+  color: var(--red-bg-clr);
+}
 .p-1 { padding: 1rem 0 0 0}
 
 .f-sm-4x { font-size: 0.75rem; }
@@ -108,7 +111,8 @@ a {
 
 /* Cards Container */
 
-#cards-container {
+#cards-container,
+#item-details-container {
   display: flex;
   margin: auto;
   max-width: 1100px;
@@ -139,4 +143,40 @@ a {
 #cards-container .card .details-icon{
   text-align: end;
   cursor: pointer;
+}
+
+#item-details {
+  display: none;
+}
+
+#item-details-container {
+  flex-direction: column;
+}
+#item-details-container .details-key-value-container {
+  display: flex;
+}
+
+#item-details-container .detail {
+  border: 1px solid var(--red-bg-clr);
+  padding: 0.5rem;
+  color: var(--red-bg-clr);
+  font-size: 1rem;
+}
+
+#item-details-container .detail-key{
+  width: 100px;
+}
+
+#item-details-container .detail-value{
+  width: 250px;
+  color:#fff
+}
+
+.clr-red {
+  color: var(--red-bg-clr)
+}
+
+.btn-back {
+  background: var(--red-bg-clr);
+  color: var(--white-clr);
 }
