@@ -123,12 +123,20 @@ a {
   box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.7);
   background: var(--red-bg-clr);
   opacity: 0.9;
-  text-align: center;
   color: #fff;
+}
+
+#cards-container .card .card-content {
+  text-align: center;
 }
 
 #cards-container .card .item-image{
   width: 50%;
   display: block;
   margin: auto;
+}
+
+#cards-container .card .details-icon{
+  text-align: end;
+  cursor: pointer;
 }
