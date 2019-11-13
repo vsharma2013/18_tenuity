@@ -26,7 +26,7 @@ a {
 }
 
 h1, h2, h3, h4, h5 {
-  color: var(--red-bg-clr);
+  color: var(--white-clr);
 }
 .p-1 { padding: 1rem 0 0 0}
 
