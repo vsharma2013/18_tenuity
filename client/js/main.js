@@ -1,23 +1,23 @@
 var item1 = {
-  sku : 'S001',
-  name : 'Gujiya',
-  imgUrl : 'img/gujiya.png',
-  rating : 4,
-  description : 'A sweet deep-fried dumpling made with suji or maida and stuffed with a mixture of sweetened khoya and dried fruits.',
-  geography : 'North India',
-  ingredients : [{ name: 'Maida', isPresent: 1}, { name: 'Khoya', isPresent: 1}, { name: 'Sugar', isPresent: 1},{ name: 'Oil', isPresent: 1}],
-  nutritionInfo : 'S001Nutri',
-  taste : [{ name: 'Salty', isPresent: 0}, { name: 'Sweet', isPresent: 1}, { name: 'Plain', isPresent: 0},{ name: 'Masala', isPresent: 0}],
-  cookingStyle : [{ name: 'Fired', isPresent: 1}, { name: 'Baked', isPresent: 0}, { name: 'Roasted', isPresent: 0},{ name: 'Raw', isPresent: 0}],
-  shelfLife : 2,
-  dispatchTime : 2,
-  price : 350,
-  minQuantity : 1,
-  healthy : [{ name: 'Yes', isPresent: 1}, { name: 'No', isPresent: 0}],
-  vendorName : 'Sunanda Foods',
-  fssai : 'FSS01',
-  vendorRating : 4,
-  vendorLocation : 'Pune'
+  "sku" : "S001",
+  "name" : "Gujiya",
+  "imgUrl" : "img/gujiya.png",
+  "rating" : 4,
+  "description" : "A sweet deep-fried dumpling made with suji or maida and stuffed with a mixture of sweetened khoya and dried fruits.",
+  "geography" : "North India",
+  "ingredients" : [{ "name": "Maida", "isPresent": 1}, { "name": "Khoya", "isPresent": 1}, { "name": "Sugar", "isPresent": 1},{ "name": "Oil", "isPresent": 1}],
+  "nutritionInfo" : "S001Nutri",
+  "taste" : [{ "name": "Salty", "isPresent": 0}, { "name": "Sweet", "isPresent": 1}, { "name": "Plain", "isPresent": 0},{ "name": "Masala", "isPresent": 0}],
+  "cookingStyle" : [{ "name": "Fired", "isPresent": 1}, { "name": "Baked", "isPresent": 0}, { "name": "Roasted", "isPresent": 0},{ "name": "Raw", "isPresent": 0}],
+  "shelfLife" : 2,
+  "dispatchTime" : 2,
+  "price" : 350,
+  "minQuantity" : 1,
+  "healthy" : [{ "name": "Yes", "isPresent": 1}, { "name": "No", "isPresent": 0}],
+  "vendorName" : "Sunanda Foods",
+  "fssai" : "FSS01",
+  "vendorRating" : 4,
+  "vendorLocation" : "Pune"
 };
 
 var strItem = JSON.stringify(item1);
@@ -25,6 +25,10 @@ var item2 = JSON.parse(strItem);
 var item3 = JSON.parse(strItem);
 item2.sku = 'S002';
 item3.sku = 'S003';
+item3.healthy[0].isPresent = 0;
+item3.healthy[1].isPresent = 1;
+item2.price = 450;
+item3.price = 550;
 
 var items = [item1, item2, item3];
 
