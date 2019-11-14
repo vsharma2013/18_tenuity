@@ -132,7 +132,7 @@ function renderItemDetails(itemSku) {
     if(typeof(value) === 'object'){
       var str = `
       <div class="details-key-value-container">
-        <div class="detail detail-key">Ingredients</div>
+        <div class="detail detail-key">${key.display}</div>
         <div class="detail detail-value">
         @PLACE_HOLDER_KEY_VALUE
         </div>
